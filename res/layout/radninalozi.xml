@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/opcije_donje_nalozi"
+        android:layout_alignParentTop="true"
+       
+         />
+
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/opcije_donje_nalozi"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/nema_radnih_naloga" />
+
+    <LinearLayout
+        android:id="@id/opcije_donje_nalozi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/blue_gradient" >
+
+        <Button
+            android:id="@+id/novinalog_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:text="@string/novi_nalog" />
+
+        <Button
+            android:id="@+id/izlaz_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:text="@string/izlaz" />
+    </LinearLayout>
+
+</RelativeLayout>

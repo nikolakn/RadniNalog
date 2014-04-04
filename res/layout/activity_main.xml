@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/uredjaji_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/blue_gradient"
+        android:orientation="vertical" 
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/editTextPretraga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pretraga"
+            android:lines="1"
+            android:maxLines="1"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:background="#ffff" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uredjaji"
+            android:textSize="@dimen/title_size" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/opcije_donje"
+        android:layout_below="@id/uredjaji_title" />
+
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/opcije_donje"
+        android:layout_below="@id/uredjaji_title"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/nema_unesenih_uredjaja" />
+
+    <LinearLayout
+        android:id="@id/opcije_donje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/blue_gradient" >
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:text="@string/dodaj_novi" />
+
+        <Button
+            android:id="@+id/skeniraj_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:text="@string/skeniraj" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/opcije_donje_nalog"
+        android:layout_margin="10sp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true" >
+
+            <TextView
+                android:id="@+id/textBrNalog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editTextBrNalog"
+                android:layout_alignParentLeft="true"
+                android:text="Broj Naloga:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@id/editTextBrNalog"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textBrNalog"
+                android:text="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/myDatePickerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/textBrNalog"
+                android:layout_below="@+id/textBrNalog"
+                android:layout_marginTop="15sp"
+                android:text="Datum:" />
+
+            <EditText
+                android:id="@+id/showMyDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/myDatePickerButton"
+                android:layout_toRightOf="@id/myDatePickerButton"
+                android:singleLine="true"
+                android:text="29.08.2013" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/editTextDolazak"
+                android:layout_below="@id/myDatePickerButton"
+                android:layout_marginTop="15dp"
+                android:entries="@array/Spiner1" >
+            </Spinner>
+
+            <TextView
+                android:id="@+id/textdolazak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/spinner1"
+                android:layout_marginTop="15dp"
+                android:text="Vreme dolaska:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editTextDolazakSati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textdolazak"
+                android:layout_toRightOf="@+id/textdolazak"
+                android:ems="2"
+                android:inputType="number"
+                android:singleLine="true" />
+            
+           <TextView
+                android:id="@+id/textdolazakrazmak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_alignBottom="@id/textdolazak"
+                android:layout_toRightOf="@+id/editTextDolazakSati"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editTextDolazakMinuti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textdolazak"
+                android:layout_toRightOf="@+id/textdolazakrazmak"
+                android:inputType="number"
+                android:ems="2"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/textodlazak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/textdolazak"
+                android:layout_marginTop="15dp"
+                android:text="Vreme Odlaska:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editTextodlazak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textodlazak"
+                android:layout_toRightOf="@+id/textodlazak"
+                android:inputType="number"
+                android:ems="2"
+                android:singleLine="true"/>
+            <TextView
+                android:id="@+id/textoflazakrazmak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_alignBottom="@id/textodlazak"
+                android:layout_toRightOf="@+id/editTextodlazak"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editTextOdlazakMinuti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textodlazak"
+                android:layout_toRightOf="@+id/textoflazakrazmak"
+                android:inputType="number"
+                android:ems="2"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/textopis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/textodlazak"
+                android:layout_marginTop="15dp"
+                android:text="Opis kvara - zahtevi korisnika:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editTextopis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/textopis"
+                android:lines="3" />
+
+            <TextView
+                android:id="@+id/textrad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/editTextopis"
+                android:layout_marginTop="15dp"
+                android:text="Opis Rada:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editTextrad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/textrad"
+                android:lines="3" />
+
+            <TextView
+                android:id="@+id/textmaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/editTextrad"
+                android:layout_marginTop="15dp"
+                android:text="Utroseni materijal:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <!-- Uradjeni potrosni materijal -->
+
+            <LinearLayout
+                android:id="@+id/textmaterial1"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/textmaterial"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextmat1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextjm1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextkol1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/textmaterial2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/textmaterial1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextmat2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextjm2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextkol2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/textmaterial3"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/textmaterial2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="03 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextmat3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextjm3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextkol3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/textmaterial4"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/textmaterial3"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="04 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextmat4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextjm4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextkol4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/textmaterial5"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/textmaterial4"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextmat5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextjm5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextkol5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/textmaterial6"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/textmaterial5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextmat6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextjm6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextkol6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/textmaterial7"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/textmaterial6"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="07 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextmat7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextjm7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextkol7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/textmaterial8"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/textmaterial7"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextmat8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextjm8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextkol8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/textmaterial9"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/textmaterial8"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextmat9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextjm9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextkol9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/textmaterial10"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/textmaterial9"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextmat10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextjm10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextkol10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/textmaterial11"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/textmaterial10"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextmat11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextjm11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextkol11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <!-- Rezervni delovi -->
+
+            <TextView
+                android:id="@+id/textdelovi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/textmaterial11"
+                android:layout_marginTop="15dp"
+                android:text="Utroseni rezervni delovi:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:id="@+id/textdelovi1"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/textdelovi"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/editTextdel1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextjmdel1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextkoldel1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/textdelovi2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/textdelovi1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/editTextdel2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextjmdel2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextkoldel2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/textdelovi3"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/textdelovi2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="03 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/editTextdel3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextjmdel3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editTextkoldel3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <!-- donji meni -->
+
+    <LinearLayout
+        android:id="@+id/opcije_donje_nalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/blue_gradient" >
+
+        <Button
+            android:id="@+id/sacuvaj_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:text="@string/sa_uvaj" />
+
+        <Button
+            android:id="@+id/izlaz_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:text="@string/izlaz" />
+    </LinearLayout>
+
+</RelativeLayout>

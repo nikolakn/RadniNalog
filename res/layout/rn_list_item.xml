@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nkcode.view.RNListItem 
+    android:id="@+id/rnlitem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    >
+
+	<RelativeLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dip">
+
+        
+    <TextView
+        android:id="@+id/rn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentLeft="true"
+        android:text="@string/uredjaji" 
+        android:textSize="@dimen/rn_size"
+        />
+
+    <TextView
+        android:id="@+id/rn_opis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/uredjaji"
+        android:textSize="@dimen/rn_size" />
+
+    <TextView
+        android:id="@+id/rn_datum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentRight="true"
+        android:text="@string/uredjaji" 
+        android:textSize="@dimen/rn_size"/>
+	</RelativeLayout> 
+</com.nkcode.view.RNListItem>

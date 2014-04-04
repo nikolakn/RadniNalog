@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Radni Nalog</string>
+    <string name="action_settings">Podešavanja</string>
+    <string name="uredjaji">Uređaji</string>
+    <string name="nema_unesenih_uredjaja">Nema unesenih uređaja</string>
+    <string name="dodaj_novi">Dodaj novi</string>
+    <string name="skeniraj">Skeniraj</string>
+    <string name="model_uredjaja">Model Uredjaja:</string>
+    <string name="serijski_broj_unutrasnje_jedinice">Serijski broj unutrasnje jedinice:</string>
+    <string name="sken_barcode">Sken barcode</string>
+    <string name="adresa_">Adresa:</string>
+    <string name="telefon_">Telefon:</string>
+    <string name="ime_">Ime:</string>
+    <string name="korisnik_">Korisnik:</string>
+    <string name="nema_radnih_naloga">Nema radnih naloga</string>
+    <string name="novi_nalog">Novi nalog</string>
+    <string name="izlaz">Izlaz</string>
+    <string name="radni_nalozi">Radni nalozi</string>
+    <string name="zaklju_i">Zaključi</string>
+    <string name="sa_uvaj">Sačuvaj</string>
+    <string name="obrisi">Obriši</string>
+    <string name="Servis">Servis</string>
+    <string name="Montaza">Montaza</string>
+    <string name="Reklamacija">Reklamacija</string>
+    
+    <string name="DialogObrisiNaslov">Radni Nalog</string>
+    <string name="DijalogObrisiPoruka">Obrisi! Dali ste sigurni?</string>
+    
+    <string name="Da">Da</string>
+    <string name="Ne">Ne</string>
+    
+
+    <string-array name="Spiner1">
+        <item>Montaza</item>
+        <item>Servis</item>
+        <item>Reklamacija</item>
+    </string-array>
+        <string name="pretraga">Pretraga</string>
+        <string name="serijski_broj_spoljne_jedinice">Serijski broj spoljne jedinice:</string>
+
+</resources>

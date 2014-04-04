@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tab">#FF7E00</color>
+    <color name="red">#ff00</color>
+    <color name="green">#f0f0</color>
+    <color name="blue">#f00f</color>
+    <color name="white">#ffff</color>
+    <color name="tekst1">#1b60f3</color>
+    
+    <color name="zakljucen">#008000</color>
+    <color name="nezakljucen">#ff00</color>
+</resources>
